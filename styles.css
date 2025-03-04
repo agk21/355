@@ -1,0 +1,116 @@
+/* === GENERAL STYLING === */
+body.dark-mode {
+    background-color: #0a192f; /*  Navy Blue */
+    color: #ccd6f6; /* Softer Text */
+    font-family: Arial;
+}
+
+body.light-mode {
+    background-color: #e6f1ff; /* Light Blue Background */
+    color: black;
+}
+
+/* === NAVBAR === */
+.custom-navbar {
+    background-color: #112240; /* Dark Blue  */
+    padding: 15px;
+    display: flex;
+    justify-content: right;
+}
+
+.theme-button {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px ;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.theme-button:hover {
+    background-color: darkgray;
+}
+
+/* === HEADER SECTION === */
+.custom-header {
+    text-align: center;
+    padding: 60px;
+}
+
+.header-title {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.header-subtitle {
+    font-size: 16px;
+    color: #8892b0; /* Softer Gray  */
+}
+
+/* === PROJECTS SECTION === */
+.projects-section {
+    text-align: center;
+    padding: 60px;
+}
+
+/* Center & Adjust Project Cards */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Project Card Styling */
+.project-card {
+    background-color: #112240; /* Dark Navy Blue */
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 350px; 
+    text-align: center;
+   
+}
+
+/* Adjust Button Appearance */
+.project-button {
+    background-color: #3d5af1; /* Brighter Blue */
+    color: white;
+    padding: 12px 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.project-button:hover {
+    background-color: #5773ff;
+}
+
+/* === CONTACT SECTION === */
+.contact-section {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Adjust Contact Icons */
+.contact-icons a {
+    font-size: 35px;
+    display: inline-flex; /* Aligns the icon properly */
+    margin:  10px;
+    color: #3d5af1;
+    
+}
+
+.contact-icons a:hover {
+    color: #5773ff;
+   
+}
+
+/* === FOOTER === */
+.footer {
+    background-color: #112240;
+    padding: 15px;
+    text-align: center;
+    color: lightgray;
+    margin-top: 40px;
+}
