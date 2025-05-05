@@ -118,6 +118,12 @@ body.animated-bg {
   margin: 0 auto;
 }
 
+/* Prevent content from hiding under fixed navbar */
+main,
+.section:first-of-type {
+  padding-top: 100px;
+}
+
 .section-title {
   font-size: 2rem;
   margin-bottom: 20px;
