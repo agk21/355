@@ -5,7 +5,7 @@ toggleBtn.addEventListener("click", () => {
   body.classList.toggle("light-mode");
   body.classList.toggle("dark-mode");
 
-  // Enable animated background in dark mode only
+  // Rainbow animated background only in dark mode
   if (body.classList.contains("dark-mode")) {
     body.classList.add("animated-bg");
   } else {
@@ -13,7 +13,7 @@ toggleBtn.addEventListener("click", () => {
   }
 });
 
-// Enable rainbow background by default if in dark mode
+// Initialize animation on load if in dark mode
 window.addEventListener("DOMContentLoaded", () => {
   if (body.classList.contains("dark-mode")) {
     body.classList.add("animated-bg");
