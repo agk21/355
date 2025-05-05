@@ -12,13 +12,24 @@ body {
 
 /* Dark and light modes */
 .dark-mode {
-  background-color: #0b1120;
   color: #d1d5db;
 }
 
 .light-mode {
   background-color: #f9fafb;
   color: #1f2937;
+}
+
+body.animated-bg {
+  background: linear-gradient(-45deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+  background-size: 400% 400%;
+  animation: bgAnimation 15s ease infinite;
+}
+
+@keyframes bgAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Layout */
@@ -32,11 +43,11 @@ body {
   padding: 20px;
 }
 
-/* Text styles */
+/* Text */
 .main-title {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #e5e7eb;
+  color: #f8fafc;
   margin-bottom: 12px;
 }
 
@@ -46,7 +57,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* Button group */
+/* Buttons */
 .button-group {
   display: flex;
   flex-wrap: wrap;
@@ -55,7 +66,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* Rainbow gradient buttons */
 .btn {
   background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80, #facc15);
   background-size: 300% 300%;
@@ -68,11 +78,18 @@ body {
   text-decoration: none;
   transition: background-position 0.5s ease, transform 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: rainbow 6s ease infinite;
 }
 
 .btn:hover {
   background-position: right center;
   transform: translateY(-2px);
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Theme toggle button */
@@ -85,11 +102,78 @@ body {
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: 20px;
 }
 
 .theme-toggle:hover {
   background-color: #7873f5;
   color: white;
+}
+
+/* Sections */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* Projects */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 700px;
+  text-align: left;
+}
+
+.project-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #e0e7ff;
+  margin-bottom: 8px;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #cbd5e1;
+}
+
+/* Experience */
+.experience-entry {
+  margin-bottom: 30px;
+}
+
+.experience-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e0e7ff;
+  margin-bottom: 6px;
+}
+
+.experience-description {
+  font-size: 1rem;
+  color: #cbd5e1;
 }
 
 /* Footer */
@@ -99,28 +183,3 @@ body {
   font-size: 0.9rem;
   color: #6b7280;
 }
-
-.btn {
-  animation: rainbow 6s ease infinite;
-}
-
-@keyframes rainbow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* ===== Animated Rainbow Background ===== */
-body.animated-bg {
-  background: linear-gradient(-45deg, #ff6ec4, #7873f5, #4ade80, #facc15);
-  background-size: 400% 400%;
-  animation: bgAnimation 15s ease infinite;
-}
-
-@keyframes bgAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-
