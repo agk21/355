@@ -1,74 +1,112 @@
-body {
+/* Reset and base */
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Dark and light modes */
 .dark-mode {
-  background-color: #0a192f;
-  color: #ccd6f6;
+  background-color: #0b1120;
+  color: #d1d5db;
 }
 
 .light-mode {
-  background-color: #fdfdfd;
-  color: #0a192f;
+  background-color: #f9fafb;
+  color: #1f2937;
 }
 
+/* Layout */
 .centered-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 20px;
 }
 
+/* Text styles */
 .main-title {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #e5e7eb;
+  margin-bottom: 12px;
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-  color: #8892b0;
+  font-size: 1.25rem;
+  color: #9ca3af;
+  margin-bottom: 40px;
 }
 
+/* Button group */
 .button-group {
   display: flex;
-  gap: 15px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
   margin-bottom: 30px;
 }
 
+/* Rainbow gradient buttons */
 .btn {
-  background-color: #3d5af1;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+  background-size: 300% 300%;
   color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
+  padding: 14px 28px;
   font-size: 1rem;
-  transition: background-color 0.3s ease;
+  font-weight: 600;
+  border: none;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-position 0.5s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-  background-color: #5773ff;
+  background-position: right center;
+  transform: translateY(-2px);
 }
 
+/* Theme toggle button */
 .theme-toggle {
-  padding: 10px 15px;
+  background: none;
+  border: 2px solid #7873f5;
+  color: #7873f5;
+  padding: 10px 20px;
+  border-radius: 9999px;
   font-size: 0.9rem;
-  background: transparent;
-  border: 2px solid currentColor;
-  border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+.theme-toggle:hover {
+  background-color: #7873f5;
+  color: white;
+}
+
+/* Footer */
 .footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  color: #8892b0;
+  color: #6b7280;
 }
+
+.btn {
+  animation: rainbow 6s ease infinite;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
