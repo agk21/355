@@ -183,3 +183,65 @@ body.animated-bg {
   font-size: 0.9rem;
   color: #6b7280;
 }
+
+/* ===== Top Navigation Bar ===== */
+.top-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(11, 17, 32, 0.85);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  padding: 12px 24px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.nav-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-size: 1rem;
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* ===== Theme Toggle in Navbar ===== */
+.theme-toggle {
+  background: none;
+  border: 2px solid #7873f5;
+  color: #7873f5;
+  padding: 8px 14px;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+}
+
+.theme-toggle:hover {
+  background-color: #7873f5;
+  color: white;
+}
+
