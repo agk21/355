@@ -251,3 +251,27 @@ main,
   color: white;
 }
 
+/* Light mode text color overrides */
+.light-mode .main-title {
+  color: #1f2937; /* near-black */
+}
+
+.light-mode .subtitle {
+  color: #4b5563; /* slate gray */
+}
+
+.light-mode .section-title {
+  color: #1f2937;
+}
+
+.light-mode .section-text,
+.light-mode .project-description,
+.light-mode .experience-description {
+  color: #374151; /* gray-700 */
+}
+
+.light-mode .project-name,
+.light-mode .experience-title {
+  color: #1f2937;
+}
+
