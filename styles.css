@@ -92,23 +92,23 @@ body.animated-bg {
   100% { background-position: 0% 50%; }
 }
 
-/* Theme toggle button */
+/* ===== Theme Toggle in Navbar ===== */
 .theme-toggle {
   background: none;
   border: 2px solid #7873f5;
   color: #7873f5;
-  padding: 10px 20px;
+  padding: 8px 14px;
   border-radius: 9999px;
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 20px;
 }
 
 .theme-toggle:hover {
   background-color: #7873f5;
   color: white;
 }
+
 
 /* Sections */
 .section {
